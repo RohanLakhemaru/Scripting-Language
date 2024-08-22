@@ -1,0 +1,27 @@
+#Operation on Variables
+-----------------------
+
+1. Arithmetic Operator: +,-,*,/,**,%,++,--
+2. Logical Operator : &&, ||, !
+3. Assignment Operator: =, +=, -=, *=, /=, %= , **=
+4. Comparison Operator: >, <,== ,!=,>=,<=,===
+
+
+#Control Structure
+------------------
+
+1.Conditional Statement
+--> if else (if(condition){}, else if(condition){}, else{})
+--> Switch case (switch(expression); case 1: {} default {};)
+
+2.Branching Statement
+--> continue;
+--> break;
+
+3.Looping Statement
+--> for loop{for(initialization;condition;increment or decrement)}
+--> while loop {while(condition){};}
+--> do while loop(do{}while(condition))
+--> foreach loop( 
+	forEach( int a in arrayName )
+ )

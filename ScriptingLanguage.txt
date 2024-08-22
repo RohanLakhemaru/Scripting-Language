@@ -1,0 +1,19 @@
+LAB 1
+-------------
+1. Write a javascript program to store your name, address, faculty and display them in console as well as in browser.
+2. Write a javascript program to perform the arithematic operation and display the output.
+3. Write a javascript program to display the message if the browser have not enabled the javascript.
+4. Write html and javascript programs to embed javascript file in html file.
+
+
+LAB 2
+-------------
+1. Write a JavaSciprt program to calculate the interest with provided principle, rate and time.
+2. Write a JavaScript program that converts temperature in centigrade into Fahrenheit. Hint((c-0)/100 = (f-32)/180)
+3. Write a Javascript program to check if (your name ) is eligible to make citizenship card or not.
+4. Write a JavaScript program to check wheather the number is prime or composite number.
+5. Write a JavaScript program to check wheather the number is odd or even.
+6. Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then return triple their sum.
+7. Write a JavaScript program to find the largest of three given integers.
+8. Write a JavaScript program to find the closest value to 100 from two numerical values.
+9. Write a Javascript to perform the arithematic operation using switch statement.
