@@ -17,3 +17,8 @@ LAB 2
 7. Write a JavaScript program to find the largest of three given integers.
 8. Write a JavaScript program to find the closest value to 100 from two numerical values.
 9. Write a Javascript to perform the arithematic operation using switch statement.
+
+LAB 3
+------------
+
+1. Write A JavaSciprt program to define addition substraction, multiplication & division function & call them through Click event

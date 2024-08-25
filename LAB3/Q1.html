@@ -7,26 +7,29 @@
 </head>
 <body>
     <script>
-        var i = 1;
-        document.write('odd While Loop : ');
-        while(i < 101){
-            document.write(i + " ");
-            i += 2;
+        function add(a,b){
+            let result = a + b;
+            document.write('Addition: ' + result);
         }
-        document.write('<br>EVEN While Loop : ');
-        i = 2;
-        while(i < 101){
-            document.write(i + " ");
-            i += 2;
+        function sub(a,b){
+            let result = a - b;
+            document.write('Subtraction: ' + result);
         }
-        document.write('<br>odd For Loop : ');
-        for(i = 1; i < 101; i+=2){
-            document.write(i + " ");
+        function mul(a,b){
+            let result = a * b;
+            document.write('Multiplcation: ' + result);
         }
-        document.write('<br>even For Loop : ');
-        for(i = 2; i < 101; i+=2){
-            document.write(i + " ");
+        function div(a,b){
+            let result = a / b;
+            document.write('Division: ' + result);
         }
     </script>
+    <button onclick="add(10,20)">Addition</button>
+    <br>
+    <button onclick="sub(10,20)">subtraction</button>
+    <br>
+    <button onclick="mul(10,20)">multiplication</button>
+    <br>
+    <button onclick="div(10,20)">division</button>
 </body>
 </html>
