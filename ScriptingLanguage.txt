@@ -23,3 +23,15 @@ LAB 3
 
 1. Write A JavaSciprt program to define addition substraction, multiplication & division function & call them through Click event
 2. Write A JavaSciprt program to prompt a value from 0 to 9 and check if the value with randomly generated value from 0 to 9 is equal then show apporiate result using alert.
+
+LAB 4
+------------
+
+1. Write a JavaScript program to generate the random number between 1 to 9 and get the input from the user through prompt box and do compare the value, if user guess matches the random number then show the alert box for correct guess otherwise.
+2. Write a JavaScript program to take marks of 5 subjects and name of student from the prompt box and calculate the total marks and percentage and display the name of student total marks and percentage in alert box.
+3. Write a JavaScript program to convert the user inputted value from prompt box to uppercase, lowercase and display them in alert box
+4. Write a JavaScript program to demonstrate the for in and for of loop:
+5. Write a JavaScript program to demonstrate the user defined object.
+6. Write a JavaScript program to demonstrate the different String object method like: concat, substring, trim, search, indexof with usage in comment.
+7. Write a JavaScript program to demonstrate to define different way of defining Date format and display the minute, hour, day, month, year, time zone etc.
+8. Write a JavaScript program to find the minimum maximum, absolute, square root, floor, ceiling, round value using math object.

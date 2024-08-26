@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //user defined object
+        let mobile = {
+            Brand : 'Samsung',
+            price : '50000',
+            modal : 'S24',
+            IMENO : 'A12456', 
+        }
+        //add more object
+        mobile.color = 'red';
+
+        // Change existing object
+        mobile.IMENO = 'S125468';
+
+
+        //display all objects
+        for(let y in mobile){
+            document.write(y + ': ');
+            document.write(mobile[y]+"<br/>");
+        }
+    </script>
+</body>
+</html>

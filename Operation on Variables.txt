@@ -25,3 +25,7 @@
 --> foreach loop( 
 	forEach( int a in arrayName )
  )
+ --> for in loop [syntax: for(var x in arrayName){...}] //give the key value
+ --> for of loop [syntax: for(var x of arrayName){...}] //give the arrayelement
+
+
