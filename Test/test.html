@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting form value through Javascript</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" name="name" id="name" placeholder="name"><br><br>
+        <input type="text" name="address" id="address"  placeholder="address"><br><br>
+        <input type="email" name="email" id="email"  placeholder="email"><br><br>
+        <input type="number" name="id" id="Stdid" placeholder="student Id"><br><br>
+        <input type="submit" value="submit" onclick="display()">
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>email</th>
+            <th>ID</th>
+        </tr>
+        <tr>
+            <td id="table-name"></td>
+            <td id="table-address"></td>
+            <td id="table-email"></td>
+            <td id="table-id"></td>
+        </tr>
+    </table>
+
+    <script>
+        var form = document.getElementById("myForm");
+        function handleForm(event) { event.preventDefault(); } 
+        form.addEventListener('submit', handleForm);
+        
+        function display(){
+            var name = document.getElementById('name').value;
+            var address = document.getElementById('address').value;
+            var email = document.getElementById('email').value;
+            var id = document.getElementById('Stdid').value;
+
+            document.getElementById('table-name').innerText = name;
+            document.getElementById('table-address').innerText = address;
+            document.getElementById('table-email').innerText = email;
+            document.getElementById('table-id').innerText = id;
+        }
+    </script>
+</body>
+</html>

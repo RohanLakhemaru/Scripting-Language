@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="name" id="name" placeholder="name"><br><br>
+        <input type="number" name="maths" id="maths" placeholder="maths" min="0" max="100"><br><br>
+        <input type="number" name="scriptingLanguage" id="scriptingLanguage" placeholder="scriptingLanguage" min="0" max="100"><br><br>
+        <input type="number" name="operatingSystem" id="operatingSystem" placeholder="operatingSystem" min="0" max="100"><br><br>
+        <input type="number" name="softwareEngineering" id="softwareEngineering" placeholder="softwareEngineering" min="0" max="100"><br><br>
+        <input type="number" name="dbms" id="dbms" placeholder="dbms" min="0" max="100"><br><br>
+        <input type="submit" value="submit" onclick="display()">
+    </form>
+</body>
+<script>
+    function display() {
+        var name = document.getElementById('name').value;
+        var maths = document.getElementById('maths').value;
+        var scriptingLanguage = document.getElementById('scriptingLanguage').value;
+        var operatingSystem = document.getElementById('operatingSystem').value;
+        var softwareEngineering = document.getElementById('softwareEngineering').value;
+        var dbms = document.getElementById('dbms').value;
+        
+        var percentage = (parseInt(maths) + parseInt(scriptingLanguage) + parseInt(operatingSystem) + parseInt(softwareEngineering) + parseInt(dbms))/500*100;
+        var division = ()=>{
+            if(percentage>=80){
+                return "First Division";
+            }
+            else if(percentage>=60){
+                return "second Division";
+            }
+            else if(percentage>=40){
+                return "third Division";
+            }
+            else{
+                return "NG*";
+            }
+        }
+
+        
+        document.write('<table border="1"><tr><th>Name</th><th>Percentage</th><th>Divistion</th></tr>');
+        document.write('<tr><td>'+name+'</td><td>'+percentage+'%</td><td>'+division()+'</td></tr></table>');
+
+    }
+</script>
+
+</html>
