@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Design a login page & if the supplied value from the textbox matches with stored value in your program then show the alert box & display the value-->
+    <form id="form">
+        <input type="text" name="username" id="username" placeholder="User Name">
+        <input type="password" name="password" id="password" placeholder="password">
+        <input type="submit" value="Login">
+    </form>
+
+    <script>
+        var username = "Admin";
+        var password = "password";
+         var $form = document.getElementById('form');
+
+            $form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                var $username = document.getElementById('username').value;
+                var $password = document.getElementById('password').value;
+
+
+                if (username === $username && password === $password) {
+                    document.write("Login Succesful");
+
+                } else {
+                    alert("Fill the Corect details");
+                }
+            });
+    </script>
+</body>
+</html>
