@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Check Validity and Empty input field in js-->
+
+
+    <p>Enter Text: <input type="text" id="name"></p>
+    <p>Enter Phone Number: <input type="text" id="phone"></p>
+    <p>Enter Email: <input type="text" id="email"></p>
+    <input type="button" value="Validate" onclick="checkFormEmpty()">
+    <script>
+        let name = document.getElementById('name');
+        let phone = document.getElementById('phone');
+        let email = document.getElementById('email');
+
+        HTMLInputElement.prototype.checkEmpty = function() {
+            if (this.value == '') {
+                alert(this.getAttribute('id') + " is empty");
+            } else {
+                var id = this.getAttribute('id');
+                
+                let patternName = /^A[a-z]+$/; // Name should start with 'A' and follow with lowercase letters
+                let patternEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/; // Standard email format
+                let patternPhone = /^[0-9]{10}$/; // 10 digit phone number
+                
+                if (id === 'name' && this.value.match(patternName)) {
+                    alert(id + " is valid");
+                } else if (id === 'email' && this.value.match(patternEmail)) {
+                    alert(id + " is valid");
+                } else if (id === 'phone' && this.value.match(patternPhone)) {
+                    alert(id + " is valid");
+                } else {
+                    alert(id + " is invalid");
+                }
+            }
+        };
+
+        function checkFormEmpty() {
+            name.checkEmpty();
+            email.checkEmpty();
+            phone.checkEmpty();
+        }
+
+    </script>
+</body>
+
+</html>
