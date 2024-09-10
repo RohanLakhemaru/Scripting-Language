@@ -35,3 +35,17 @@ LAB 4
 6. Write a JavaScript program to demonstrate the different String object method like: concat, substring, trim, search, indexof with usage in comment.
 7. Write a JavaScript program to demonstrate to define different way of defining Date format and display the minute, hour, day, month, year, time zone etc.
 8. Write a JavaScript program to find the minimum maximum, absolute, square root, floor, ceiling, round value using math object.
+
+
+LAB 6
+------------
+
+1. Write a JavaScript program to implement windows and frames.
+2. Write a JavaScript program to implement Document Object Model.
+3. Write a JavaScript program to implement all Event Handling,
+4. Write a program to design a student registration form and display the value in appropriate format.
+5. Write a JavaScript program to validate phone number with formal +977-98XXXXXXXX, and email with domain gmail and outlook .
+6. Write a Javascript program to alert the user if the college registration form is empty. Also check that the college name doesnot contain number and college address should be in the format as
+"Balaju-12,Kathmandu, Nepal.
+7. Write a Javascript program to that takes username and password from the form and check the user inputted value and stored value and alert the user.
+8. Write a JavaScript program store the cookies values as from the question 7.

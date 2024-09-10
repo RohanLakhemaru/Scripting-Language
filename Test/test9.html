@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Set Cookies-->
+    
+    <p>Username = <input type="text" id="Name"></p>
+    <p>Password = <input type="text" id="password"></p>
+    <p><input type="button" value="Set cookie" onclick="setCookies()"></p>
+
+    <script>
+        function setCookies(){
+            let username = document.getElementById("Name").value;
+            let password = document.getElementById("password").value;
+            document.cookie = "User Name = " + encodeURIComponent(username) + "; Password = " + encodeURIComponent(password) + "; expires = Thu,8 Dec 2024 12:00 UTC";
+            console.log(decodeURIComponent(document.cookie));
+            document.writeln("Cookie Stored");
+        }
+
+    </script>
+</body>
+</html>
